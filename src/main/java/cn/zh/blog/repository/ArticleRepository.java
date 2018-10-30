@@ -8,6 +8,6 @@ import java.util.List;
 
 public interface ArticleRepository extends JpaRepository<Article, Integer> {
 
-    @Query("select articleTitle from Article")
-    List<String> findArticleTitle();
+    @Query("select classify from Article")
+    List<String> findClassify();
 }

@@ -29,7 +29,7 @@ public class ArticleController {
     @GetMapping("findArticleTitle")
     @ResponseBody
     public Result findArticleTitle() {
-        return Result.ok(articleJpa.findArticleTitle());
+        return Result.ok(articleJpa.findClassify());
     }
 
     @ResponseBody
