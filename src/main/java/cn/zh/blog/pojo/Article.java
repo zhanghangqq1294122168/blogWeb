@@ -8,9 +8,8 @@ import static javax.persistence.GenerationType.IDENTITY;
 
 @Entity
 @Data
-@Table(indexes = {@Index(columnList = "ArticleId")})
+@Table(indexes = {@Index(columnList = "id")})
 public class Article {
-
     //    博文Id
     @Id
     @GeneratedValue(strategy = IDENTITY)
