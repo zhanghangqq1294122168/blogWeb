@@ -1,6 +1,6 @@
 package cn.zh.blog.controller;
 
-import cn.zh.blog.pojo.Article;
+import cn.zh.blog.entity.Article;
 import cn.zh.blog.repository.ArticleRepository;
 import cn.zh.blog.util.Result;
 import org.springframework.beans.factory.annotation.Autowired;
