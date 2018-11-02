@@ -8,10 +8,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping("/article")
@@ -22,7 +19,7 @@ public class ArticleController {
 
     @PostMapping("save")
     @ResponseBody
-    public Result save(Article article) {
+    public Result save(@RequestBody Article article) {
         return Result.ok(articleJpa.save(article));
     }
 
