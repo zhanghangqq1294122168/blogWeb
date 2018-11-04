@@ -1,5 +1,5 @@
 system:
-  upload: D:\blogUpdata
+  upload: /media/zhanghang/应用/upData/
 spring:
   profiles:
     active:
@@ -35,7 +35,7 @@ logging:
 server:
   servlet:
     context-path: /blog
-  port: 8088
+  port: 8081
   tomcat:
     uri-encoding: utf-8
 #  # security 使能
