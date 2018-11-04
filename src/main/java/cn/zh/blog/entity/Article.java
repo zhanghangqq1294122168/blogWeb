@@ -1,10 +1,12 @@
 package cn.zh.blog.entity;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 
 
+@EqualsAndHashCode(callSuper = true)
 @Entity
 @Data
 @Table(indexes = {@Index(columnList = "id")})
